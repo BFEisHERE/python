@@ -1,1 +1,31 @@
+from imp import is_frozen
 
+
+a = float (input("1. Sayı giriniz:"))
+b = float(input("2. sayı giriniz:"))
+c = input("İşlem tipini seçiniz:")
+if(c=="+"):
+    print("toplamları:",a+b)
+elif(c=="-"):
+    print("farkları:",a-b)
+elif(c=="*"):
+    print("çarpımları:",a*b)
+elif(c=="/"):
+    print("bölümleri:",a/b)
+else:
+    print("Geçersiz işlem!!!")
+
+print("""*********************************************
+                KULLANICI GİRİŞ PANELİ
+*********************************************""")
+kullanıcı_adı= input("kullanıcı adınız:")
+kullanıcıadı="Burak"
+sifre_2="123456burak"
+sifre=input("sifreniz:")
+if(kullanıcı_adı==kullanıcıadı):
+    if(sifre==sifre_2):
+        print("Giriş Başarılı")
+    else:
+        print("Şifre hatalı")
+else:
+    print("kullanıcı adı veya şifre hatalı!!")
