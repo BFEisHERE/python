@@ -1,0 +1,72 @@
+#Elemanları 1-9 arası rakamlar içeren 100 elemanlı bir random bir liste üreterek, bu liste üzerinde her bir rakamın kaç defa geçtiğini gösteren bir sözlük yapısı kurun.
+#(not: Hazır fonksiyonlar kullanılmadan yapılacak)
+import random
+
+random_list = list()
+for i in range(1,101):
+  random_sayı=random.randint(1,9)
+  random_list.append(random_sayı)
+sözlük = {"Bir":1,"İki":2,"Üç":3,"Dört":4,"Beş":5,"Altı":6,"Yedi":7,"Sekiz":8,"Dokuz":9}
+#random_list'teki değerler saydırılıp sözlükten karşısına denk gelen ifadeyi alarak sayısını belli etme
+bir = 0
+iki = 0
+üç = 0
+dört = 0
+beş = 0
+altı = 0
+yedi = 0
+sekiz = 0
+dokuz = 0
+for j in range(0,100):
+  x = random_list[j]
+  if(x == 1):
+    bir += 1
+  elif(x == 2):
+    iki += 1
+  elif(x==3):
+    üç+=1
+  elif(x==4):
+    dört+=1
+  elif(x==5):
+    beş+=1
+  elif(x==6):
+    altı+=1
+  elif(x==7):
+    yedi+=1
+  elif(x==8):
+    sekiz+=1
+  else:
+    dokuz+=1
+print("Bir:",bir,"\nİki:",iki,"\nÜç:",üç,"\nDört:",dört,"\nBeş:",beş,"\nAltı:",altı,"\nYedi:",yedi,"\nSekiz:",sekiz,"\nDokuz:",dokuz)
+
+
+
+#random.random() ile üretilecek 100 tane sayı içinde birbirine en yakın iki sayıyı bulan programı kodlayın.
+#(not: Hazır fonksiyonlar kullanılmadan yapılacak)
+
+
+import random
+
+random_list = []
+for i in range(1,101):
+  random_sayı=random.randint(1,9)
+  random_list.append(random_sayı)
+
+yakınsayı=0
+enyakın=-1
+for j in range(0,99):
+  x = random_list[j]
+  y = random_list[j+1]
+  yakınlık = abs(x-y)
+  if abs(x-y)<yakınlık:
+    yakınlık= abs(x-y)
+    enyakın=x
+  else:
+    if abs(x-y)==yakınlık:
+      if x != enyakın:
+        enyakın = yakınlık
+        yakınsayı = x
+
+if (yakınlık == enyakın):
+  print("1. en yakın sayı:",yakınsayı)
+print("2. en yakın sayı:",enyakın)
