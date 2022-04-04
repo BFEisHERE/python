@@ -1,0 +1,14 @@
+Ersin Destanoğlu,Beşiktaş
+Mert Günor,Beşiktaş
+Emre Bilgin,Beşiktaş
+Göktuğ Baytekin,Beşiktaş
+Valentin Rosier,Beşiktaş
+Rıdvan Yılmaz,Galatasaray
+Francisco Montero,Galatasaray
+Necip Uysal,Galatasaray
+Fabrice N'Sakala,Galatasaray
+Welinton Silva,Galatasaray
+Domagoj Vida,Fenerbahçe
+Kerem Kalafat,Fenerbahçe
+Serdar Saatçı,Fenerbahçe
+Umut Meraş,Fenerbahçe
